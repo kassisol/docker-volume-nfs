@@ -1,0 +1,26 @@
+{
+	"description": "NFS volume plugin for Docker",
+	"documentation": "https://github.com/kassisol/docker-volume-nfs",
+	"entrypoint": ["/docker-volume-nfs"],
+	"interface" : {
+		"types": ["docker.volumedriver/1.0"],
+		"socket": "nfsvol.sock"
+	},
+	"linux": {
+		"capabilities": ["CAP_SYS_ADMIN"]
+	},
+	"mounts": [
+		{
+			"source": "/var/lib/docker/plugins",
+			"destination": "/var/lib/docker/state",
+			"type": "bind",
+			"options": [
+				"rbind"
+			]
+		}
+	],
+	"network": {
+		"type": "host"
+	},
+	"propagatedmount": "/var/lib/docker/volumes"
+}

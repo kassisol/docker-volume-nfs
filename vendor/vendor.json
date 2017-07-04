@@ -1,0 +1,73 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "AzjRkOQtVBTwIw4RJLTygFhJs3s=",
+			"path": "github.com/Microsoft/go-winio",
+			"revision": "f533f7a102197536779ea3a8cb881d639e21ec5a",
+			"revisionTime": "2017-05-24T00:36:31Z"
+		},
+		{
+			"checksumSHA1": "9X1/hLR+WoHu3Vg6SDKF6W6Rjm4=",
+			"path": "github.com/Sirupsen/logrus",
+			"revision": "7dd06bf38e1e13df288d471a57d5adbac106be9e",
+			"revisionTime": "2017-06-30T00:54:20Z"
+		},
+		{
+			"checksumSHA1": "RBwpnMpfQt7Jo7YWrRph0Vwe+f0=",
+			"path": "github.com/coreos/go-systemd/activation",
+			"revision": "24036eb3df68550d24a2736c5d013f4e83366866",
+			"revisionTime": "2017-06-09T14:46:27Z"
+		},
+		{
+			"checksumSHA1": "jUfDG3VQsA2UZHvvIXncgiddpYA=",
+			"path": "github.com/docker/go-connections/sockets",
+			"revision": "3ede32e2033de7505e6500d6c868c2b9ed9f169d",
+			"revisionTime": "2017-06-23T20:36:43Z"
+		},
+		{
+			"checksumSHA1": "9/gpnQVuH/eszYpzCGeG1AtOdMM=",
+			"path": "github.com/docker/go-plugins-helpers/sdk",
+			"revision": "abb3e589c0322ddc019c2ec5f587ea0df2024869",
+			"revisionTime": "2017-06-21T09:41:05Z"
+		},
+		{
+			"checksumSHA1": "bELvyBvmY5t2P/dCuCLxwTb1I+Q=",
+			"path": "github.com/docker/go-plugins-helpers/volume",
+			"revision": "abb3e589c0322ddc019c2ec5f587ea0df2024869",
+			"revisionTime": "2017-06-21T09:41:05Z"
+		},
+		{
+			"checksumSHA1": "blC8BiiPdg4xYMXS6iOE7G7ueqI=",
+			"path": "github.com/juliengk/go-utils/filedir",
+			"revision": "fdfeab14609bbb4ff6ed82e003755060a7ce9da2",
+			"revisionTime": "2017-05-19T18:36:51Z"
+		},
+		{
+			"checksumSHA1": "BHV6ZmUv64EI8AXwoJqP+6ccakk=",
+			"path": "github.com/juliengk/go-utils/json",
+			"revision": "fdfeab14609bbb4ff6ed82e003755060a7ce9da2",
+			"revisionTime": "2017-05-19T18:36:51Z"
+		},
+		{
+			"checksumSHA1": "fjMK2G5arnjllpoeBYeyf9Y2Iok=",
+			"path": "golang.org/x/net/proxy",
+			"revision": "570fa1c91359c1869590e9cedf3b53162a51a167",
+			"revisionTime": "2017-07-01T00:59:03Z"
+		},
+		{
+			"checksumSHA1": "2ncnCWXu6MhDubZJYmyFNBYsrXE=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "94b76065f2d2081d0fef24a6e67c571f51a6408a",
+			"revisionTime": "2017-07-01T06:49:51Z"
+		},
+		{
+			"checksumSHA1": "Pki0iA65Dtsjh4gtabPkp/lOa2I=",
+			"path": "golang.org/x/sys/windows",
+			"revision": "94b76065f2d2081d0fef24a6e67c571f51a6408a",
+			"revisionTime": "2017-07-01T06:49:51Z"
+		}
+	],
+	"rootPath": "github.com/kassisol/docker-volume-nfs"
+}
