@@ -48,6 +48,10 @@ func (d *volumeDriver) loadState() error {
 }
 
 func (d *volumeDriver) saveState() error {
+	if err := filedir.CreateDirIfNotExist(d.statePath, false, 0700); err != nil {
+                return err
+        }
+
 	data := json.Encode(d.volumes)
 
 	if err := ioutil.WriteFile(d.statePath, data.Bytes(), 0644); err != nil {
@@ -64,6 +68,8 @@ func (d *volumeDriver) addVolume(name string, vol *nfsVolume) error {
 	}
 
 	d.volumes[name] = vol
+
+	d.saveState()
 
 	return nil
 }
@@ -83,6 +89,8 @@ func (d *volumeDriver) removeVolume(name string) error {
 	}
 
 	delete(d.volumes, name)
+
+	d.saveState()
 
 	return nil
 }
