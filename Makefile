@@ -27,7 +27,7 @@ ifndef TMUX
 	$(error "tmux is not available, please install it")
 endif
 
-	./.tmass load -l scripts/dev/tmux/ nfsvol
+	./.tmass load -l scripts/dev/tmux/ nfs
 	tmux a -d -t nfsvol
 
 help:
