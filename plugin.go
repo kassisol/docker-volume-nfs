@@ -47,8 +47,14 @@ func (d *volumeDriver) Create(req volume.Request) volume.Response {
 		return res
 	}
 
+	server, err := HostLookup(req.Options["server"])
+	if err != nil {
+		res.Err = err.Error()
+		return res
+	}
+
 	vol := nfsVolume{
-		Server:     req.Options["server"],
+		Server:     server,
 		Path:       req.Options["path"],
 		Mountpoint: d.getPath(req.Name),
 	}

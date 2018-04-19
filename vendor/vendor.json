@@ -51,6 +51,12 @@
 			"revisionTime": "2017-05-19T18:36:51Z"
 		},
 		{
+			"checksumSHA1": "og4tQBQGfx5/KU7HyZaVNu4Od70=",
+			"path": "github.com/juliengk/go-utils/validation",
+			"revision": "20776979abdb7b88224d22b021041eaceb833659",
+			"revisionTime": "2018-03-21T16:21:44Z"
+		},
+		{
 			"checksumSHA1": "fjMK2G5arnjllpoeBYeyf9Y2Iok=",
 			"path": "golang.org/x/net/proxy",
 			"revision": "570fa1c91359c1869590e9cedf3b53162a51a167",
